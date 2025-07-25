@@ -179,3 +179,20 @@ ul{list-style:none;}
   .contact-info h2{font-size:1.5rem;}
   .contact .tel{font-size:1.6rem;}
 }
+
+/* ===== ヒーロー ===== */
+.hero{
+  position:relative;
+  background:var(--primary);          /* 画像が読み込めない場合の保険 */
+  color:var(--light);
+  text-align:left;
+  padding:140px 4% 160px;
+  overflow:hidden;                    /* はみ出し防止 */
+}
+.hero-bg{
+  position:absolute;
+  inset:0;                            /* 親要素いっぱいに広げる */
+  background:url('images/hero_building.jpg') center/cover no-repeat;
+  filter:brightness(65%);             /* 暗幕がわり：数値で濃さ調整 */
+  z-index:-1;                         /* テキストより背面へ */
+}
