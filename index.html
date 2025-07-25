@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>丸喜プロパティ株式会社｜人と想いを結び、未来を築く</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== ヘッダー ========== -->
+  <header class="header">
+    <div class="container flex">
+      <!-- ロゴ画像は差し替えてください -->
+      <a href="#" class="logo"><img src="images/logo_maruki.png" alt="丸喜プロパティ ロゴ"></a>
+
+      <!-- ハンバーガーアイコン -->
+      <input type="checkbox" id="navToggle" class="nav-toggle" hidden>
+      <label for="navToggle" class="nav-toggle-label"><span></span></label>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">会社概要</a></li>
+          <li><a href="#services">事業内容</a></li>
+          <li><a href="#contact">問い合わせ</a></li>
+          <li><a href="#blog">ブログ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== ヒーロー ========== -->
+  <section class="hero">
+    <h1><span>人と想いを結び、</span><span>未来を築く。</span></h1>
+    <p class="tagline">不動産売買・賃貸・管理のトータルパートナー</p>
+  </section>
+
+  <!-- ========== 会社概要 ========== -->
+  <section id="about" class="section about">
+    <h2>会社概要</h2>
+    <div class="about-box">
+      <table>
+        <tr><th>社名</th><td>丸喜プロパティ株式会社</td></tr>
+        <tr><th>代表取締役</th><td>喜多村&nbsp;愛</td></tr>
+        <tr><th>所在地</th><td>〒650‑0025&nbsp;神戸市中央区相生町1丁目1番16号&nbsp;402</td></tr>
+        <tr><th>TEL&nbsp;/&nbsp;Mobile</th><td>090‑5133‑5355</td></tr>
+        <tr><th>事業内容</th><td>不動産売買・賃貸・管理業</td></tr>
+        <tr><th>免許番号</th><td>兵庫県知事(○○○○)号</td></tr>
+        <tr><th>保有資格</th><td>宅地建物取引士／賃貸不動産経営管理士／相続診断士</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ========== ブログ ========== -->
+  <section id="blog" class="section blog">
+    <h2>ブログ</h2>
+
+    <form id="postForm" class="post-form">
+      <input type="text" id="title" placeholder="タイトル" required>
+      <textarea id="body" placeholder="本文／補足コメント"></textarea>
+      <input type="file" id="imageFile" accept="image/*">
+      <button type="submit">投稿する</button>
+    </form>
+
+    <div id="posts" class="posts"></div>
+  </section>
+
+  <!-- ========== 事業内容 ========== -->
+  <section id="services" class="section services">
+    <h2>事業内容</h2>
+
+    <!-- 売買仲介 -->
+    <div class="service-item">
+      <h3>■ 不動産売買仲介</h3>
+      <ul>
+        <li><strong>居住用・投資用物件の売買</strong></li>
+        <li><strong>価格査定・マーケット分析</strong></li>
+        <li><strong>契約書・重要事項説明書作成</strong></li>
+      </ul>
+    </div>
+
+    <!-- 賃貸仲介 -->
+    <div class="service-item">
+      <h3>■ 賃貸仲介</h3>
+      <ul>
+        <li><strong>入居者募集・媒介業務</strong></li>
+        <li><strong>賃料相場調査・条件設定</strong></li>
+        <li><strong>リーシング戦略立案</strong></li>
+      </ul>
+    </div>
+
+    <!-- 賃貸管理 -->
+    <div class="service-item">
+      <h3>■ 賃貸管理</h3>
+      <ul>
+        <li><strong>家賃集金・送金・督促</strong></li>
+        <li><strong>入退去立会い・原状回復手配</strong></li>
+        <li><strong>建物・設備の保守点検</strong></li>
+      </ul>
+    </div>
+
+    <!-- 不動産コンサル -->
+    <div class="service-item">
+      <h3>■ 不動産コンサルティング</h3>
+      <ul>
+        <li><strong>資産活用・相続対策</strong></li>
+        <li><strong>リノベーション企画・施工管理</strong></li>
+        <li><strong>ポートフォリオ最適化</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== 問い合わせ ========== -->
+  <section id="contact" class="section contact">
+    <div class="contact-inner">
+      <img src="images/under-logo_maruki.png" alt="丸喜プロパティ 白抜きロゴ" class="contact-logo">
+      <div class="contact-info">
+        <h2>問い合わせ</h2>
+        <p class="tel"><a href="tel:09051335355">Mobile&nbsp;: 090‑5133‑5355</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer"><small>&copy; 2025 Maruki Property Co., Ltd.</small></footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
