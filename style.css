@@ -67,17 +67,6 @@ ul{list-style:none;}
 .nav-toggle:checked + .nav-toggle-label span::before{top:0;transform:rotate(45deg);}
 .nav-toggle:checked + .nav-toggle-label span::after{top:0;transform:rotate(-45deg);}
 
-/* ===== ヒーロー ===== */
-.hero{
-  background:
-    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
-    url('images/hero_realestate.jpg') center/cover no-repeat;
-  color:var(--light);
-  text-align:left;padding:140px 4% 160px;
-}
-.hero h1{font-size:3rem;line-height:1.3;}
-.hero h1 span:nth-child(2){color:var(--accent);}
-.tagline{margin-top:24px;font-size:1.2rem;color:#ddd;}
 
 /* ===== 会社概要 ===== */
 .about-box{
